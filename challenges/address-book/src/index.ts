@@ -40,22 +40,22 @@ function getFullName ( contact: Person) {
 }
 
 interface Person {
-  firstName?: string;
+  firstName: string;
   middleName?: string;
   lastName?: string;
   salutation?: string;
   email?: string;
-  phones?: {
+  phones: {
     [ k: string ]: string;
   };
-  addresses?: {
+  addresses: {
     [ k: string ]: {
-      houseNumber?: number;
-      street?: string;
-      city?: string;
-      state?: string;
-      postalCode?: number;
-      country?: string;
+      houseNumber: number;
+      street: string;
+      city: string;
+      state: string;
+      postalCode: number;
+      country: string;
     };
   }
 }
